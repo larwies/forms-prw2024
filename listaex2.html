@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="listaex2.php" method="get">
+        <div>
+            <input type="radio" name="n" value= 1 id="n">PF
+            <input type="radio" name="n" value= 2 id="n">PJ
+        </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label for="n2">Reclamação:</label>
+            <textarea name="reclamacao" value="digite aqui sua reclamação" rows="5" cols="10" maxlength="200"></textarea> 
+        <div>
+            <div>
+                <label for="prod">Produto:</label>
+                <input type="checkbox" name="alimen" id="alimen">Alimento
+                <input type="checkbox" name="beb" id="beb">Bebida
+            </div>
+            <div>
+                <select name = "Avaliação:" value = "1" size="5">
+                <option>1 estrela</option>
+                <option>2 estrelas</option>
+                <option>3 estrelas</option>
+                <option>4 estrelas</option>
+                <option>5 estrelas</option>
+                
+            </div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

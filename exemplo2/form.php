@@ -1,12 +1,6 @@
 <?php 
     echo "<h2>Tempo Viagem</h2>";
 
-    //$_GET['nome_campo']
-    //$_POST['nome_campo']
-
-
-    //recebendo dados enviados do form html via post 
-
      $vm = $_GET['vm'];
      $dv = $_GET['dv'];
      $cm = $_GET['cm'];
