@@ -33,25 +33,29 @@
      echo $estado;
 
      $erro=0;
-if(strlen($user)<5)
-{ 
-    echo '<h3>O username deve possuir no mínimo 5 caracteres</h3>'; $erro=1;
-}
-if(strlen($senha)<5)
-{ 
-    echo '<h3>A senha deve possuir no mínimo 5 caracteres</h3>'; $erro=1;
-}
-if(empty($cidade))
-{ 
-    echo '<h3>Favor digitar sua cidade</h3>'; $erro=1;
-}
-if(strlen($estado)!=2)
-{ 
-    echo '<h3>Favor digitar seu estado corretamente</h3>'; $erro=1;
-}
-if($erro==0)
-{ 
-    echo '<h3>Todos os dados foram digitados corretamente!</h3>';
-}
+    if(strlen($user)<5)
+        { 
+            echo '<h3>O username deve possuir no mínimo 5 caracteres</h3>'; 
+            $erro=1;
+        }
+    if(strlen($senha)<5)
+        { 
+            echo '<h3>A senha deve possuir no mínimo 5 caracteres</h3>'; 
+            $erro=1;
+        }
+    if(empty($cidade))
+        { 
+            echo '<h3>Favor digitar sua cidade</h3>'; 
+            $erro=1;
+        }
+    if(strlen($estado)!=2)
+        { 
+            echo '<h3>Favor digitar seu estado corretamente</h3>'; 
+            $erro=1;
+        }
+    if($erro==0)
+        { 
+            echo '<h3>Todos os dados foram digitados corretamente!</h3>';
+        }
 
 ?>
