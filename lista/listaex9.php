@@ -5,14 +5,14 @@
      $h = $_GET['h'];
     
 
-     if($h <= 12){
+     if(strtotime($h) < strtotime("12:00")){
         echo "Bom dia ".$nome;
      }
-     else if($h > 12 and $h <= 6){
-        echo "Boa tarde ".$nome;
-     }
-     else if ($h <= 6){
+     else if(strtotime($h) > strtotime("18:00")){
         echo "Boa noite ".$nome;
+     }
+     else{
+        echo "Boa tarde ".$nome;
      }
     
 ?>
